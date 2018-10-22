@@ -24,9 +24,11 @@ https://www.toptal.com/angular/angular-6-jwt-authentication
   ` http://localhost:7777/profile `
 
 
+## Build Frontend
 
+  - ` ng build `
 
-## Run
+## Run Server
 
   - ` npm run serve `
 
