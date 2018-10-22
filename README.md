@@ -37,7 +37,7 @@ https://www.toptal.com/angular/angular-6-jwt-authentication
  - ` npm run watch ` + ` npm run serve `//in separate terminal
 
 
-np## Check for vulnerabilities
+## Check for vulnerabilities
 
 
        ` snyk test `
@@ -49,3 +49,8 @@ np## Check for vulnerabilities
        ` npm audit `
 
        ` npm audit fix `
+
+
+## Update to Angular 7
+
+    ` ng update @angular/cli @angular/core `
