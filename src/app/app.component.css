@@ -1,0 +1,20 @@
+
+.navbar{
+  background-color: #4f1515;
+}
+
+
+li a {
+  color: white;
+}
+
+
+li a:hover{
+  color: #ec8f0d;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ec8f0d;
+	background-color: transparent;
+}

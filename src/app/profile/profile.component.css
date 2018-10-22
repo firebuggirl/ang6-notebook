@@ -1,0 +1,29 @@
+
+.container{
+  background-color: black;
+  border-radius: 4px;
+  border: 3px solid #570909;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.container-fluid{
+  flex-direction: column;
+
+}
+
+h1{
+  margin-bottom: 1.5em;
+  color: #d7870f;
+}
+
+
+.name{
+  margin-bottom: 1em;
+}

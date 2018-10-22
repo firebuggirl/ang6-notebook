@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import '../node_modules/bootstrap/dist/css/bootstrap.css'; */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+body{
+  background-color: #242222;
+  color: bisque;
+}
+
+
+body a {
+  color: #ec8f0d;
+}
+
+body a:hover{
+  color: #c62e1a;
+}
+
+.form-control-static{
+  /* padding-left: 15px; */
+}
