@@ -1,4 +1,7 @@
-# Todoapp
+# Notebook App
+
+![picture](./src/assets/images/notebook-logo.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
@@ -30,3 +33,17 @@ https://www.toptal.com/angular/angular-6-jwt-authentication
 ## Build/update + Run
 
  - ` npm run watch ` + ` npm run serve `//in separate terminal
+
+
+np## Check for vulnerabilities
+
+
+       ` snyk test `
+
+
+       - OR
+
+
+       ` npm audit `
+
+       ` npm audit fix `
