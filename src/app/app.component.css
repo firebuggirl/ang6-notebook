@@ -1,11 +1,12 @@
 
-.navbar{
+#navContainer{
   background-color: #4f1515;
 }
 
 
 li a {
   color: white;
+  padding: .75em;
 }
 
 
