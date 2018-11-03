@@ -5,6 +5,10 @@
       </div>
   <h1>Welcome to Notebook</h1>
 
-  <p><a routerLink="/login">sign in</a> or <a routerLink="/register">register</a>to begin your session.</p>
+  <p *ngIf="!auth.isLoggedIn()" ><a routerLink="/login">sign in</a> or <a routerLink="/register">register</a>to begin your session.</p>
+
+  <div class="nav-item" *ngIf="auth.isLoggedIn()">
+    <button type="submit" class="btn bg-warning btn-sm btn-block" (click)="auth.logout()">Log Out</button>
+  </div>
 
 </div>

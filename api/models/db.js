@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const mongodb = require("mongodb");
 const ObjectID = mongodb.ObjectID;
 
+var CONTACTS_COLLECTION = "contacts";
+
 mongoose.connect(process.env.LOCAL_DB);//mLab connection string
 //mongoose.connect(process.env.DOCKER_DB);//for Docker development change `localhost`` to `mongodb` in connection string...needs to match name of image container!!!
 mongoose.set('debug', true);
@@ -65,3 +67,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 
 // BRING IN YOUR SCHEMAS & MODELS
 require('./users');
+
+//require('./note');
+//
+require('./Contact');

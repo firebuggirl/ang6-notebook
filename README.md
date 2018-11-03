@@ -54,3 +54,11 @@ https://www.toptal.com/angular/angular-6-jwt-authentication
 ## Update to Angular 7
 
     ` ng update @angular/cli @angular/core `
+
+    ` npm i @angular/cdk --save `
+
+    ` np i @angular/material --save `
+
+## New Scrolling Feature
+
+  https://material.angular.io/cdk/scrolling/overview

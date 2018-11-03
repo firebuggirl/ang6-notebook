@@ -1,0 +1,37 @@
+<div class="contactlist" >
+  <h1 class="title">Contact List
+    <a [routerLink]="['/contact-create']" class="button is-link is-outlined"><i class="fas fa-plus"></i>Add</a>
+  </h1>
+  <table  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zipcode</th>
+      </tr>
+    </thead>
+
+
+  <tbody>
+  <tr *ngFor="let contact of contacts | paginate: { itemsPerPage: 10,
+                                                    currentPage: page,
+                                                    totalItems: totalRec }">
+  <td><a class="button is-text" [routerLink]="['/contact-details', contact._id]">{{ contact.name }}</a></td>
+  <td>{{ contact.email }}</td>
+  <td>{{ contact.phone }}</td>
+  <td>{{ contact.address }}</td>
+  <td>{{ contact.city }}</td>
+  <td>{{ contact.state }}</td>
+  <td>{{ contact.zipcode }}</td>
+  </tr>
+  </tbody>
+  </table>
+
+<div class="paginationDiv">
+  <pagination-controls class="my-pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>

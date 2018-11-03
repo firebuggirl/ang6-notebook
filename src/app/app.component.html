@@ -13,9 +13,22 @@
       <li class="nav-item"  *ngIf="auth.isLoggedIn()">
         <a class="nav-link" routerLink="/profile">Profile</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contacts">Contacts</a>
+      </li>
+      <!-- <li class="nav-item" >
+        <a class="nav-link" routerLink="/contact-details/:id">Contact Details</a>
+      </li> -->
+      <!-- <li class="nav-item" >
+        <a class="nav-link" routerLink='contact-edit/:id'>Contact Edit</a>
+      </li> -->
+      <li class="nav-item"  *ngIf="auth.isLoggedIn()">
+        <a class="nav-link" routerLink="/scroll">Scroll</a>
+      </li>
       <li class="nav-item" *ngIf="auth.isLoggedIn()">
         <a class="nav-link" (click)="auth.logout()">Logout</a>
       </li>
+
     </ul>
   </nav>
 </div>

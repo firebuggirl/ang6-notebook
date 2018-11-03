@@ -4,6 +4,9 @@ import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators/map';
 import { Router } from '@angular/router';
 
+
+
+
 export interface UserDetails {
   _id: string;
   email: string;
@@ -22,11 +25,15 @@ export interface TokenPayload {
   name?: string;
 }
 
+
+
+
+
 @Injectable()
 export class AuthenticationService {
   private token: string;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router ) {}
 
   private saveToken(token: string): void {
     localStorage.setItem('mean-token', token);
@@ -93,6 +100,7 @@ export class AuthenticationService {
   public profile(): Observable<any> {
     return this.request('get', 'profile');
   }
+
 
   public logout(): void {
     this.token = '';

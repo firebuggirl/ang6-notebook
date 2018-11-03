@@ -1,0 +1,22 @@
+.contactDetail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin-top: 2em;
+
+}
+
+
+section{
+  background-color: black;
+  padding: 1em;
+  border: 3px solid #570909;
+}
+
+.column{
+	display: flex;
+	justify-content: space-around;
+}
+button{
+  /* margin-right: 1em; */
+}

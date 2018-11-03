@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+
+     <div class="container-fluid">
+
+
+
+        <div class="form-group row">
+          <h1>Welcome to your Notebook {{ details?.name }}</h1>
+        </div>
+
+     </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+  <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+    <div *cdkVirtualFor="let state of states" class="example-item">{{state.name}}</div>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+<!-- <form #contactForm="ngForm" (ngSubmit)="saveNote()">
+       <h1 class="title">Add New Note</h1>
+     <div class="form-group ">
+       <label for="name" class="create-label">Note</label>
+       <div>
+         <input required name="note" id="title" [(ngModel)]="note.note" type="text" class="input" placeholder="Note">
+       </div>
+     </div>
+
+
+
+       <div class="form-group">
+         <button class="button back" routerLink="/profile">Back</button>
+         <button class="button create" type="submit" [disabled]="!contactForm.valid">Create</button>
+       </div>
+
+
+   </form> -->

@@ -1,0 +1,64 @@
+<div class="contactEdit">
+  <h1 class="title">Update Contact</h1>
+  <div >
+    <div>
+      <form #contactForm="ngForm" (ngSubmit)="updateContact(contact._id)">
+        <div class="field">
+          <label for="name">Name</label>
+          <div class="control">
+            <input *ngIf="contact" required name="name" id="name" [(ngModel)]="contact.name" type="text" class="input">
+            <input *ngIf="!contact" required name="name" id="name" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="control">
+            <input *ngIf="contact" required name="email" id="email" [(ngModel)]="contact.email" type="text" class="input">
+            <input *ngIf="!contact" required name="email" id="email" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <div class="control">
+            <input *ngIf="contact" required name="phone" id="phone" [(ngModel)]="contact.phone" type="text" class="input">
+            <input *ngIf="!contact" required name="phone" id="phone" type="text" class="input">
+          </div>
+        </div>
+       <div class="control">
+         <label for="address">Address</label>
+          <div class="field">
+            <input *ngIf="contact" required name="address" id="address" [(ngModel)]="contact.address" type="text" class="input">
+            <input *ngIf="!contact" required name="address" id="address" type="text" class="input">
+          </div>
+       </div>
+      <div class="control">
+         <label for="city">City</label>
+          <div class="field">
+            <input *ngIf="contact" required name="city" id="city" [(ngModel)]="contact.city" type="text" class="input">
+            <input *ngIf="!contact" required name="city" id="city" type="text" class="input">
+          </div>
+      </div>
+      <div class="control">
+          <label for="state">State</label>
+          <div class="field">
+            <input *ngIf="contact" required name="state" id="state" [(ngModel)]="contact.state" type="text" class="input">
+            <input *ngIf="!contact" required name="state" id="state" type="text" class="input">
+        </div>
+      </div>
+      <div class="control">
+            <label for="zipcode">Zipcode</label>
+            <div class="field">
+              <input *ngIf="contact" required name="zipcode" id="zipcode" [(ngModel)]="contact.zipcode" type="text" class="input">
+              <input *ngIf="!contact" required name="zipcode" id="zipcode" type="text" class="input">
+           </div>
+      </div>
+      <div class="btn-column">
+          <div class="btncontrol">
+            <button class="btn btn-danger btn-edit" routerLink="/contacts"><i class="fas fa-arrow-left"></i>Back</button>
+            <button class="btn btn-warning" type="submit" [disabled]="!contactForm.valid">Update</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

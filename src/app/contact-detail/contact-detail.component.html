@@ -1,0 +1,25 @@
+<div class="contactDetail">
+  <section >
+    <div >
+      <div class="detail-container">
+        <h1 class="title">{{ contact?.name }}</h1>
+        <h2 class="subtitle">Email {{ contact?.email }}</h2>
+        <h2 class="subtitle">Phone {{ contact?.phone }}</h2>
+        <h2 class="subtitle">Address {{ contact?.address }}</h2>
+        <h2 class="subtitle">City {{ contact?.city }}</h2>
+        <h2 class="subtitle">State {{ contact?.state }}</h2>
+        <h2 class="subtitle">Zipcode {{ contact?.zipcode }}</h2>
+        <!-- <h2 class="subtitle">work phone {{ contact?.phone.work }}</h2>
+        <h2 class="subtitle">mobile phone {{ contact?.phone.mobile }}</h2> -->
+      </div>
+    </div>
+    <div class="btn-column">
+      <div class="column">
+        <button class="btn btn-danger btn-lg btn-detail" routerLink="/contacts">Back</button>
+        <button *ngIf="contact" class="btn btn-warning btn-lg btn-detail" [routerLink]="['/contact-edit', contact?._id]">Edit</button>
+        <button *ngIf="!contact"  class="btn btn-warning btn-lg btn-detail">Edit</button>
+        <button class="btn btn-danger btn-lg btn-detail" (click)="deleteContact(contact?._id)">Delete</button>
+      </div>
+    </div>
+  </section>
+</div>

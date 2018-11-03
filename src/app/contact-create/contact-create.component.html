@@ -1,0 +1,59 @@
+<div class="contactEdit">
+
+<form #contactForm="ngForm" (ngSubmit)="saveContact()">
+       <h1 class="title">Add New Contact</h1>
+     <div class="form-group ">
+       <label for="name" class="create-label">Name</label>
+       <div>
+         <input required name="name" id="title" [(ngModel)]="contact.name" type="text" class="input" placeholder="Name">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="email" class="create-label">Email</label>
+       <div>
+         <input  required name="email" id="email" [(ngModel)]="contact.email" type="text" class="input" placeholder="support@mlab.com">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="phone" class="create-label">Phone</label>
+       <div>
+         <input  required name="phone" id="phone" [(ngModel)]="contact.phone" type="text" class="input" placeholder="1234567890">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="address" class="create-label">Address</label>
+       <div>
+         <input  required name="address" id="address" [(ngModel)]="contact.address" type="text" class="input" placeholder="123 Tumbleweed Dr.">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="city" class="create-label">City</label>
+       <div>
+         <input  required name="city" id="city" [(ngModel)]="contact.city" type="text" class="input" placeholder="Desert Springs">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="state" class="create-label">State</label>
+       <div>
+         <input  required name="state" id="state" [(ngModel)]="contact.state" type="text" class="input" placeholder="CA">
+       </div>
+     </div>
+     <div class="form-group ">
+       <label for="zipcode" class="create-label">Zipcode</label>
+       <div>
+         <input  required name="zipcode" id="zipcode" [(ngModel)]="contact.zipcode" type="text" class="input" placeholder="90011">
+       </div>
+     </div>
+
+
+       <div class="btn-createContact">
+         <button class="btn btn-danger btn-edit" routerLink="/contacts"><i class="fas fa-arrow-left"></i>Back</button>
+         <button class="btn btn-warning" type="submit" [disabled]="!contactForm.valid">Create</button>
+       </div>
+
+
+
+   </form>
+
+
+</div>
